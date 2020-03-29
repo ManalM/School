@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <include layout="@layout/tool_bar"/>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableStart="@drawable/email"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:layout_margin="20dp"
+        android:textSize="22sp"
+
+         />
+
+
+    <TextView
+        android:id="@+id/profile_school_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableStart="@drawable/school"
+        android:drawableLeft="@drawable/school"
+        android:layout_margin="20dp"
+        android:textSize="22sp"
+        android:drawablePadding="10dp"
+       />
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:drawableStart="@drawable/name"
+        android:drawableLeft="@drawable/name"
+
+        android:layout_margin="20dp"
+        android:textSize="22sp"
+        android:drawablePadding="10dp" />
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:drawableStart="@drawable/level"
+        android:drawableLeft="@drawable/level"
+
+        android:layout_margin="20dp"
+        android:textSize="22sp"
+        android:drawablePadding="10dp" />
+
+
+    <Button
+        android:id="@+id/register"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editData"
+        android:layout_marginTop="30dp"
+        android:background="#ED7E1E"
+
+        android:text="Edit your information" />
+
+    <Button
+        android:id="@+id/logout"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="logOut"
+        android:layout_marginTop="30dp"
+        android:background="#ED7E1E"
+
+        android:text="Log out" />
+</LinearLayout>
